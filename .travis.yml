@@ -9,7 +9,7 @@ python:
 install:
     - pip install jupyter
     - wget https://github.com/hakimel/reveal.js/archive/3.7.0.zip
-    - unzip master.zip
+    - unzip 3.7.0.zip
     - mv reveal.js-master reveal.js
 
 script:
