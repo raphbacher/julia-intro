@@ -13,7 +13,7 @@ install:
     - mv reveal.js-3.5.0 reveal.js
 
 script:
-    - jupyter nbconvert presentation_julia.ipynb --to slides --reveal-prefix=reveal.js --SlidesExporter.reveal_theme=serif --SlidesExporter.reveal_scroll=True --SlidesExporter.reveal_transition=none
+    - jupyter nbconvert presentation_julia.ipynb --to slides --reveal-prefix=reveal.js --SlidesExporter.reveal_theme=serif --SlidesExporter.reveal_scroll=True --SlidesExporter.reveal_transition=none --template=template_slides.tpl
 
 after_success: |
     git checkout --orphan gh-pages
